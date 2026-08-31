@@ -7,6 +7,8 @@ import difflib
 import ast
 import threading
 import subprocess
+import statistics
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, List, Any
 
@@ -449,10 +451,10 @@ class DIYHarness:
 # ==============================================================================
 # MAIN BENCHMARK RUNNER & COMPARISON MATRIX GENERATOR
 # ==============================================================================
-def run_standardized_benchmark_suite():
-    print("=" * 88)
-    print("      OMNITASK AGENT BENCHMARK: STANDARDIZED EMPIRICAL COMPARISON")
-    print("=" * 88)
+def run_standardized_benchmark_suite(iterations: int = 5):
+    print("=" * 96)
+    print(f"      OMNITASK AGENT BENCHMARK: STANDARDIZED EMPIRICAL COMPARISON ({iterations} ITERATIONS)")
+    print("=" * 96)
     print("  Evaluating all 5 architectures against the EXACT SAME 3-Phase Workload Matrix:")
     print("    • Phase 1: 3 Parallel Microservice Feature Additions (Auth, Billing, Task Engine)")
     print("    • Phase 2: AST Gateway Refactoring, Parsing & Syntax Verification")
@@ -469,16 +471,40 @@ def run_standardized_benchmark_suite():
     benchmark_report = {}
 
     for harness in harnesses:
-        print(f"▶ Running standardized benchmark on: {harness.name} ({harness.isolation_model})...")
-        # 1. Reset baseline before every run
-        reset_workspace_baseline()
+        print(f"▶ Running {iterations} iterations on: {harness.name} ({harness.isolation_model})...")
+        p1_times, p2_times, p3_times, total_times = [], [], [], []
+        tests_passed_count = 0
 
-        # 2. Run identical workload
-        result = harness.run_benchmark(PARALLEL_TASKS, REFACTOR_TASK)
-        benchmark_report[harness.name] = result
+        for it in range(1, iterations + 1):
+            reset_workspace_baseline()
+            res = harness.run_benchmark(PARALLEL_TASKS, REFACTOR_TASK)
+            p1_times.append(res['phase1_parallel_ms'])
+            p2_times.append(res['phase2_refactor_ms'])
+            p3_times.append(res['phase3_tests_ms'])
+            total_times.append(res['total_duration_ms'])
+            if res['phase3_tests_passed']:
+                tests_passed_count += 1
+            print(f"    Iter {it}/{iterations}: Total = {res['total_duration_ms']:.2f}ms (P1={res['phase1_parallel_ms']:.2f}ms, P2={res['phase2_refactor_ms']:.2f}ms, P3={res['phase3_tests_ms']:.2f}ms) | Tests: {'PASS' if res['phase3_tests_passed'] else 'FAIL'}")
 
-        print(f"    ✓ Total: {result['total_duration_ms']:.2f}ms | Phase 1: {result['phase1_parallel_ms']:.2f}ms | "
-              f"Phase 2: {result['phase2_refactor_ms']:.2f}ms | Tests: {'PASSED' if result['phase3_tests_passed'] else 'FAILED'}\n")
+        def get_stats(data: List[float]):
+            return {
+                'mean_ms': statistics.mean(data),
+                'stdev_ms': statistics.stdev(data) if len(data) > 1 else 0.0,
+                'min_ms': min(data),
+                'max_ms': max(data)
+            }
+
+        benchmark_report[harness.name] = {
+            'engine': harness.name,
+            'isolation_model': harness.isolation_model,
+            'iterations': iterations,
+            'phase1_parallel': get_stats(p1_times),
+            'phase2_refactor': get_stats(p2_times),
+            'phase3_tests': get_stats(p3_times),
+            'total_duration': get_stats(total_times),
+            'test_pass_rate': f"{(tests_passed_count / iterations) * 100:.1f}% ({tests_passed_count}/{iterations})"
+        }
+        print()
 
     # Clean workspace baseline after completion
     reset_workspace_baseline()
@@ -489,14 +515,20 @@ def run_standardized_benchmark_suite():
         json.dump(benchmark_report, f, indent=2)
 
     # Print Comparative Matrix Table
-    print("=" * 88)
-    print(f"{'ENGINE / PARADIGM':<22} | {'PHASE 1 (3 Tasks)':<18} | {'PHASE 2 (Refactor)':<18} | {'TESTS':<8} | {'TOTAL LATENCY':<14}")
-    print("-" * 88)
+    print("=" * 96)
+    print(f"{'ENGINE / PARADIGM':<22} | {'PHASE 1 (3 Tasks)':<20} | {'PHASE 2 (Refactor)':<20} | {'TESTS':<9} | {'TOTAL LATENCY (Mean ± σ)':<20}")
+    print("-" * 96)
     for name, r in benchmark_report.items():
-        test_str = "PASS ✓" if r['phase3_tests_passed'] else "FAIL ✗"
-        print(f"{name:<22} | {r['phase1_parallel_ms']:>10.2f} ms     | {r['phase2_refactor_ms']:>10.2f} ms     | {test_str:<8} | {r['total_duration_ms']:>8.2f} ms")
-    print("=" * 88)
-    print(f"\nFull standardized benchmark results written to: {report_path}\n")
+        p1_str = f"{r['phase1_parallel']['mean_ms']:>6.2f} ± {r['phase1_parallel']['stdev_ms']:<4.2f} ms"
+        p2_str = f"{r['phase2_refactor']['mean_ms']:>6.2f} ± {r['phase2_refactor']['stdev_ms']:<4.2f} ms"
+        tot_str = f"{r['total_duration']['mean_ms']:>6.2f} ± {r['total_duration']['stdev_ms']:<4.2f} ms"
+        pass_str = "100% ✓" if "100" in r['test_pass_rate'] else r['test_pass_rate']
+        print(f"{name:<22} | {p1_str:<20} | {p2_str:<20} | {pass_str:<9} | {tot_str:<20}")
+    print("=" * 96)
+    print(f"\nFull statistical benchmark report written to: {report_path}\n")
 
 if __name__ == '__main__':
-    run_standardized_benchmark_suite()
+    parser = argparse.ArgumentParser(description="OmniTask Agent Paradigm Benchmark Suite")
+    parser.add_argument('--iterations', '-n', type=int, default=5, help="Number of benchmark iterations to run (default: 5)")
+    args = parser.parse_args()
+    run_standardized_benchmark_suite(iterations=args.iterations)
