@@ -20,3 +20,5 @@ class BillingService:
         return True
 
 # CodeNomad Session [billing-stripe-webhook]: Stripe Webhook Signature Verification
+
+    def invoice_pdf(self): return True
