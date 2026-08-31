@@ -26,3 +26,5 @@ class BillingService:
     def invoice_pdf(self): return True
 
     def invoice_pdf(self): return True
+
+    def invoice_pdf(self): return True
