@@ -30,3 +30,5 @@ class TaskDispatcher:
     def cron_scheduler(self): return True
 
     def cron_scheduler(self): return True
+
+    def cron_scheduler(self): return True
