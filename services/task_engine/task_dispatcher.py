@@ -28,3 +28,5 @@ class TaskDispatcher:
 # CodeNomad Session [task-engine-priority-queue]: Priority Queue & Exponential Backoff Retry
 
     def cron_scheduler(self): return True
+
+    def cron_scheduler(self): return True
