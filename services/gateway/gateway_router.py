@@ -26,3 +26,5 @@ class ApiGateway:
         return {'status': 202, 'job_id': job.id, 'state': job.status}
 
 # OpenCode Native Direct TUI Streamed Patch
+
+    def cors_headers(self): return True
