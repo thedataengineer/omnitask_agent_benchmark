@@ -5,40 +5,40 @@
       "isolation_model": "Full Git Worktree & Branch Isolation",
       "iterations": 30,
       "phase1_parallel": {
-        "mean_ms": 176.46359726883625,
-        "stdev_ms": 7.339265779842209,
-        "p50_ms": 174.30329151102342,
-        "p90_ms": 183.35068310261704,
-        "p99_ms": 199.35318857402308,
-        "min_ms": 169.51429200707935,
-        "max_ms": 201.28666699747555
+        "mean_ms": 269.3513985655348,
+        "stdev_ms": 10.017960157581047,
+        "p50_ms": 269.43970851425547,
+        "p90_ms": 282.1356701955665,
+        "p99_ms": 291.41047266079113,
+        "min_ms": 250.89029199443758,
+        "max_ms": 293.0222079739906
       },
       "phase2_refactor": {
-        "mean_ms": 0.48465686656224233,
-        "stdev_ms": 0.02470985918771367,
-        "p50_ms": 0.4828125092899427,
-        "p90_ms": 0.5227042187470943,
-        "p99_ms": 0.5349054580437951,
-        "min_ms": 0.43429198558442295,
-        "max_ms": 0.5356670008040965
+        "mean_ms": 0.5359513675405955,
+        "stdev_ms": 0.06897482243997888,
+        "p50_ms": 0.5282289930619299,
+        "p90_ms": 0.5691338912583888,
+        "p99_ms": 0.7752185550634751,
+        "min_ms": 0.47616599476896226,
+        "max_ms": 0.8579169807489961
       },
       "phase3_tests": {
-        "mean_ms": 60.8553875683962,
-        "stdev_ms": 1.8974275269965257,
-        "p50_ms": 60.57458350551315,
-        "p90_ms": 63.35108281637076,
-        "p99_ms": 65.84713926771656,
-        "min_ms": 58.265125000616536,
-        "max_ms": 66.41608302015811
+        "mean_ms": 75.63511673070025,
+        "stdev_ms": 2.4066678872790526,
+        "p50_ms": 74.79110400890931,
+        "p90_ms": 78.50687470054254,
+        "p99_ms": 81.9983498333022,
+        "min_ms": 72.2422499966342,
+        "max_ms": 82.36941701034084
       },
       "total_duration": {
-        "mean_ms": 237.80823880127477,
-        "stdev_ms": 7.7895039291034385,
-        "p50_ms": 236.05974949896336,
-        "p90_ms": 245.93456698930822,
-        "p99_ms": 261.0009953653207,
-        "min_ms": 228.65995799656957,
-        "max_ms": 263.4610410023015
+        "mean_ms": 345.52860276695964,
+        "stdev_ms": 11.460670842754793,
+        "p50_ms": 345.1801249902928,
+        "p90_ms": 358.0158287950326,
+        "p99_ms": 370.97389389615273,
+        "min_ms": 323.63254198571667,
+        "max_ms": 371.7254170041997
       },
       "test_pass_rate": "100.0% (30/30)"
     },
@@ -47,40 +47,40 @@
       "isolation_model": "Supervised Multi-Session Desktop Cockpit",
       "iterations": 30,
       "phase1_parallel": {
-        "mean_ms": 1.9985042987779404,
-        "stdev_ms": 0.12377943661047108,
-        "p50_ms": 2.0177295082248747,
-        "p90_ms": 2.158345587668009,
-        "p99_ms": 2.211016061482951,
-        "min_ms": 1.7622910090722144,
-        "max_ms": 2.2204169945325702
+        "mean_ms": 2.041484801641976,
+        "stdev_ms": 0.24226314355171463,
+        "p50_ms": 2.0278130104998127,
+        "p90_ms": 2.134291990660131,
+        "p99_ms": 2.924771723919549,
+        "min_ms": 1.803666993509978,
+        "max_ms": 3.182292013661936
       },
       "phase2_refactor": {
-        "mean_ms": 0.4202764005943512,
-        "stdev_ms": 0.045331437716839194,
-        "p50_ms": 0.4231249913573265,
-        "p90_ms": 0.4770253144670278,
-        "p99_ms": 0.5003563867649063,
-        "min_ms": 0.3440000000409782,
-        "max_ms": 0.5076669913250953
+        "mean_ms": 0.43690816673915833,
+        "stdev_ms": 0.07494480559360578,
+        "p50_ms": 0.40327048918697983,
+        "p90_ms": 0.5478919192682952,
+        "p99_ms": 0.5741528235375881,
+        "min_ms": 0.3447500057518482,
+        "max_ms": 0.5775000026915222
       },
       "phase3_tests": {
-        "mean_ms": 60.5103041336406,
-        "stdev_ms": 2.0516336095163847,
-        "p50_ms": 60.063083496061154,
-        "p90_ms": 62.83477910619695,
-        "p99_ms": 64.55826986639295,
-        "min_ms": 56.545999977970496,
-        "max_ms": 64.95083300978877
+        "mean_ms": 70.7806666342852,
+        "stdev_ms": 2.7151607318388202,
+        "p50_ms": 69.92952102154959,
+        "p90_ms": 75.21099619334564,
+        "p99_ms": 76.62868060055189,
+        "min_ms": 67.29716699919663,
+        "max_ms": 76.72562499647029
       },
       "total_duration": {
-        "mean_ms": 62.93205280089751,
-        "stdev_ms": 2.097115592337828,
-        "p50_ms": 62.49412550823763,
-        "p90_ms": 65.31589580117725,
-        "p99_ms": 66.97654684830923,
-        "min_ms": 58.96208301419392,
-        "max_ms": 67.27949998457916
+        "mean_ms": 73.26185963174794,
+        "stdev_ms": 2.773054194231416,
+        "p50_ms": 72.31987499108072,
+        "p90_ms": 77.63889967754949,
+        "p99_ms": 79.17296318948502,
+        "min_ms": 69.57275001332164,
+        "max_ms": 79.37841600505635
       },
       "test_pass_rate": "100.0% (30/30)"
     },
@@ -89,40 +89,40 @@
       "isolation_model": "In-Place Model Fusion & AST Pre-Validation",
       "iterations": 30,
       "phase1_parallel": {
-        "mean_ms": 2.659430500352755,
-        "stdev_ms": 0.1281105034987536,
-        "p50_ms": 2.6467090065125376,
-        "p90_ms": 2.822858584113419,
-        "p99_ms": 2.8759642504155636,
-        "min_ms": 2.396500000031665,
-        "max_ms": 2.881583000998944
+        "mean_ms": 2.8403027671932555,
+        "stdev_ms": 0.3444923248708252,
+        "p50_ms": 2.7751455054385588,
+        "p90_ms": 3.013962190016173,
+        "p99_ms": 4.102128141967116,
+        "min_ms": 2.5031249970197678,
+        "max_ms": 4.518375004408881
       },
       "phase2_refactor": {
-        "mean_ms": 0.3086791994671027,
-        "stdev_ms": 0.03165635062477826,
-        "p50_ms": 0.30654200236313045,
-        "p90_ms": 0.3514701937092468,
-        "p99_ms": 0.3681659384164959,
-        "min_ms": 0.2650420065037906,
-        "max_ms": 0.3686250129248947
+        "mean_ms": 0.34508060198277235,
+        "stdev_ms": 0.055735165375682245,
+        "p50_ms": 0.33612450351938605,
+        "p90_ms": 0.40532980638090527,
+        "p99_ms": 0.4917171856504865,
+        "min_ms": 0.275792001048103,
+        "max_ms": 0.4947500128764659
       },
       "phase3_tests": {
-        "mean_ms": 60.528931868611835,
-        "stdev_ms": 2.0361048890118907,
-        "p50_ms": 60.30122899392154,
-        "p90_ms": 62.42439190973528,
-        "p99_ms": 66.29171249194769,
-        "min_ms": 56.787584006087855,
-        "max_ms": 67.35637498786673
+        "mean_ms": 71.89289026913077,
+        "stdev_ms": 3.05522823883195,
+        "p50_ms": 71.71814600587822,
+        "p90_ms": 76.32795391546097,
+        "p99_ms": 78.65766295843059,
+        "min_ms": 66.72237499151379,
+        "max_ms": 79.03491699835286
       },
       "total_duration": {
-        "mean_ms": 63.500106766393095,
-        "stdev_ms": 2.0509753375412134,
-        "p50_ms": 63.34114550554659,
-        "p90_ms": 65.47415830136742,
-        "p99_ms": 69.1446589003317,
-        "min_ms": 59.70458299270831,
-        "max_ms": 70.20329200895503
+        "mean_ms": 75.0815555647326,
+        "stdev_ms": 3.039853060517344,
+        "p50_ms": 75.01833348942455,
+        "p90_ms": 79.4165162864374,
+        "p99_ms": 81.7345767520601,
+        "min_ms": 69.95687499875203,
+        "max_ms": 82.21470800344832
       },
       "test_pass_rate": "100.0% (30/30)"
     },
@@ -131,40 +131,82 @@
       "isolation_model": "Direct Single Working Tree (Zero Wrapper Overhead)",
       "iterations": 30,
       "phase1_parallel": {
-        "mean_ms": 0.5250069332153847,
-        "stdev_ms": 0.048599367854541664,
-        "p50_ms": 0.5138540000189096,
-        "p90_ms": 0.5778542021289468,
-        "p99_ms": 0.674233066092711,
-        "min_ms": 0.4632500058505684,
-        "max_ms": 0.6995839939918369
+        "mean_ms": 0.5846388987265527,
+        "stdev_ms": 0.07399626114735677,
+        "p50_ms": 0.5635419947793707,
+        "p90_ms": 0.677508392254822,
+        "p99_ms": 0.7272639084840193,
+        "min_ms": 0.48991700168699026,
+        "max_ms": 0.7375829736702144
       },
       "phase2_refactor": {
-        "mean_ms": 0.369866667703415,
-        "stdev_ms": 0.030831336487123603,
-        "p50_ms": 0.3669170109787956,
-        "p90_ms": 0.3789505979511887,
-        "p99_ms": 0.4818862417596393,
-        "min_ms": 0.3393330262042582,
-        "max_ms": 0.49924998893402517
+        "mean_ms": 0.3909304679837078,
+        "stdev_ms": 0.030984202956506838,
+        "p50_ms": 0.38129149470478296,
+        "p90_ms": 0.42097440746147186,
+        "p99_ms": 0.4885187116451562,
+        "min_ms": 0.35083299735561013,
+        "max_ms": 0.5134590028319508
       },
       "phase3_tests": {
-        "mean_ms": 59.92952359859677,
-        "stdev_ms": 2.140267512722207,
-        "p50_ms": 59.604207999655046,
-        "p90_ms": 61.53400421026163,
-        "p99_ms": 66.66738674102817,
-        "min_ms": 55.93816700275056,
-        "max_ms": 68.2454579800833
+        "mean_ms": 71.30205679568462,
+        "stdev_ms": 2.6018892253499866,
+        "p50_ms": 70.56416700652335,
+        "p90_ms": 73.82110389007721,
+        "p99_ms": 79.05095765949227,
+        "min_ms": 67.48062500264496,
+        "max_ms": 80.66370798042044
       },
       "total_duration": {
-        "mean_ms": 60.82765419851057,
-        "stdev_ms": 2.1530104604070273,
-        "p50_ms": 60.45687499863561,
-        "p90_ms": 62.43623390037101,
-        "p99_ms": 67.5706281454768,
-        "min_ms": 56.818207987817004,
-        "max_ms": 69.13600000552833
+        "mean_ms": 72.2805653019653,
+        "stdev_ms": 2.6343775572566845,
+        "p50_ms": 71.53814600314945,
+        "p90_ms": 74.83379558543675,
+        "p99_ms": 80.16698331950465,
+        "min_ms": 68.49554099608213,
+        "max_ms": 81.83195799938403
+      },
+      "test_pass_rate": "100.0% (30/30)"
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "isolation_model": "Knowledge-Graph SDLC Control Plane & Structured Work Orders",
+      "iterations": 30,
+      "phase1_parallel": {
+        "mean_ms": 1.5180513689604898,
+        "stdev_ms": 0.13047967399276067,
+        "p50_ms": 1.49235398566816,
+        "p90_ms": 1.6768371919170022,
+        "p99_ms": 1.8252506462158637,
+        "min_ms": 1.3167079887352884,
+        "max_ms": 1.869500003522262
+      },
+      "phase2_refactor": {
+        "mean_ms": 0.31408739935917157,
+        "stdev_ms": 0.04141949003224434,
+        "p50_ms": 0.30510398210026324,
+        "p90_ms": 0.36344560503493994,
+        "p99_ms": 0.4145956799038686,
+        "min_ms": 0.2523339935578406,
+        "max_ms": 0.4237910034134984
+      },
+      "phase3_tests": {
+        "mean_ms": 73.65933883120306,
+        "stdev_ms": 3.2378024773419103,
+        "p50_ms": 73.4529375040438,
+        "p90_ms": 77.5358456041431,
+        "p99_ms": 80.63868623896269,
+        "min_ms": 68.29179200576618,
+        "max_ms": 80.88587498059496
+      },
+      "total_duration": {
+        "mean_ms": 75.49438473555104,
+        "stdev_ms": 3.344389391135844,
+        "p50_ms": 75.36956250260118,
+        "p90_ms": 79.54327919578645,
+        "p99_ms": 82.62839014903875,
+        "min_ms": 70.02987500163727,
+        "max_ms": 82.84729201113805
       },
       "test_pass_rate": "100.0% (30/30)"
     },
@@ -173,40 +215,40 @@
       "isolation_model": "Detached Shell Daemon / Subshell Pipes",
       "iterations": 30,
       "phase1_parallel": {
-        "mean_ms": 26.436043098025646,
-        "stdev_ms": 1.8095607080033211,
-        "p50_ms": 26.15439600776881,
-        "p90_ms": 27.728392282733694,
-        "p99_ms": 32.95391357300105,
-        "min_ms": 24.506709014531225,
-        "max_ms": 35.04979200079106
+        "mean_ms": 34.13893616428444,
+        "stdev_ms": 3.6529885114944474,
+        "p50_ms": 33.5281044972362,
+        "p90_ms": 39.81795419822448,
+        "p99_ms": 43.35695268120617,
+        "min_ms": 30.166709009790793,
+        "max_ms": 43.79070800496265
       },
       "phase2_refactor": {
-        "mean_ms": 25.090393069937516,
-        "stdev_ms": 1.1722931212864862,
-        "p50_ms": 24.739271015278064,
-        "p90_ms": 25.67605811345857,
-        "p99_ms": 29.12338343827287,
-        "min_ms": 24.071833002381027,
-        "max_ms": 29.787000006763265
+        "mean_ms": 29.665866600892816,
+        "stdev_ms": 1.3086825923238148,
+        "p50_ms": 29.391437492449768,
+        "p90_ms": 30.945983310812153,
+        "p99_ms": 33.479519419779535,
+        "min_ms": 27.72250000271015,
+        "max_ms": 33.80804098560475
       },
       "phase3_tests": {
-        "mean_ms": 64.31125146724905,
-        "stdev_ms": 1.9441117371142174,
-        "p50_ms": 64.06508400687017,
-        "p90_ms": 66.19925439008512,
-        "p99_ms": 70.10768499341793,
-        "min_ms": 60.953250009333715,
-        "max_ms": 70.97724999766797
+        "mean_ms": 70.31115836580284,
+        "stdev_ms": 4.679713844700357,
+        "p50_ms": 69.46997898921836,
+        "p90_ms": 73.30124161380809,
+        "p99_ms": 86.64618092938328,
+        "min_ms": 64.45174998953007,
+        "max_ms": 91.01375000318512
       },
       "total_duration": {
-        "mean_ms": 115.84215843467973,
-        "stdev_ms": 3.371117664176128,
-        "p50_ms": 115.09181250585243,
-        "p90_ms": 118.45320358988829,
-        "p99_ms": 125.98506273207022,
-        "min_ms": 110.45579198980704,
-        "max_ms": 126.32845898042433
+        "mean_ms": 134.12113749654964,
+        "stdev_ms": 8.155601998853676,
+        "p50_ms": 131.04381247831043,
+        "p90_ms": 143.59176660946105,
+        "p99_ms": 160.42524125514322,
+        "min_ms": 124.17149997781962,
+        "max_ms": 165.98900000099093
       },
       "test_pass_rate": "100.0% (30/30)"
     }
@@ -216,71 +258,85 @@
       "engine": "Paseo",
       "isolation_model": "Full Git Worktree & Branch Isolation",
       "collision_rate": "0.0% (Zero Collision Risk)",
-      "phase1_parallel_ms": 1255.4354169988073,
+      "phase1_parallel_ms": 1526.4290000195615,
       "phase1_tasks_completed": 10,
-      "phase2_refactor_ms": 0.4962919920217246,
+      "phase2_refactor_ms": 1.494166994234547,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 64.54700001631863,
+      "phase3_tests_ms": 74.06191699556075,
       "phase3_tests_passed": true,
-      "total_duration_ms": 1320.4825409920886,
-      "speedup_factor": 6.372291152279639,
-      "throughput_tasks_per_sec": 7.965363940349549
+      "total_duration_ms": 1601.9896249927115,
+      "speedup_factor": 5.240990573356165,
+      "throughput_tasks_per_sec": 6.551238216695207
     },
     "CodeNomad": {
       "engine": "CodeNomad",
       "isolation_model": "Supervised Multi-Session Desktop Cockpit",
       "collision_rate": "Low (Supervised Shared Working Tree)",
-      "phase1_parallel_ms": 810.1576250046492,
+      "phase1_parallel_ms": 813.3059579995461,
       "phase1_tasks_completed": 10,
-      "phase2_refactor_ms": 1.2974580167792737,
+      "phase2_refactor_ms": 1.9083750084973872,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 86.32937501533888,
+      "phase3_tests_ms": 103.05800000787713,
       "phase3_tests_passed": true,
-      "total_duration_ms": 897.7915830037091,
-      "speedup_factor": 9.87462162064338,
-      "throughput_tasks_per_sec": 12.343277025804225
+      "total_duration_ms": 918.2794590014964,
+      "speedup_factor": 9.836396649149428,
+      "throughput_tasks_per_sec": 12.295495811436783
     },
     "OpenChamber": {
       "engine": "OpenChamber",
       "isolation_model": "In-Place Model Fusion & AST Pre-Validation",
       "collision_rate": "Medium (Pre-validated In-Memory Buffer)",
-      "phase1_parallel_ms": 826.8662090122234,
+      "phase1_parallel_ms": 825.5073750042357,
       "phase1_tasks_completed": 10,
-      "phase2_refactor_ms": 0.6021250155754387,
+      "phase2_refactor_ms": 0.6543330091517419,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 74.80916698114015,
+      "phase3_tests_ms": 91.35987499030307,
       "phase3_tests_passed": true,
-      "total_duration_ms": 902.28224999737,
-      "speedup_factor": 9.675083964982463,
-      "throughput_tasks_per_sec": 12.093854956228078
+      "total_duration_ms": 917.5260000047274,
+      "speedup_factor": 9.691009725938489,
+      "throughput_tasks_per_sec": 12.113762157423112
     },
     "OpenCode Native": {
       "engine": "OpenCode Native",
       "isolation_model": "Direct Single Working Tree (Zero Wrapper Overhead)",
       "collision_rate": "High (Unsupervised Single Working Tree)",
-      "phase1_parallel_ms": 807.2680420009419,
+      "phase1_parallel_ms": 807.5140000146348,
       "phase1_tasks_completed": 10,
-      "phase2_refactor_ms": 1.2776659859810024,
+      "phase2_refactor_ms": 0.8947080059442669,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 86.81558299576864,
+      "phase3_tests_ms": 80.528916005278,
       "phase3_tests_passed": true,
-      "total_duration_ms": 895.3704169834964,
-      "speedup_factor": 9.909967425652985,
-      "throughput_tasks_per_sec": 12.387459282066231
+      "total_duration_ms": 888.9435409801081,
+      "speedup_factor": 9.906948981509935,
+      "throughput_tasks_per_sec": 12.383686226887418
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "isolation_model": "Knowledge-Graph SDLC Control Plane & Structured Work Orders",
+      "collision_rate": "Zero (Knowledge Graph Synchronized Assembly Line)",
+      "phase1_parallel_ms": 816.2502910126932,
+      "phase1_tasks_completed": 10,
+      "phase2_refactor_ms": 0.9027089981827885,
+      "phase2_ast_valid": true,
+      "phase3_tests_ms": 108.14691701671109,
+      "phase3_tests_passed": true,
+      "total_duration_ms": 925.3050000115763,
+      "speedup_factor": 9.800915341879609,
+      "throughput_tasks_per_sec": 12.251144177349511
     },
     "DIY (Tmux / Bash Daemon)": {
       "engine": "DIY (Tmux / Bash Daemon)",
       "isolation_model": "Detached Shell Daemon / Subshell Pipes",
       "collision_rate": "High (Concurrent Shell I/O)",
-      "phase1_parallel_ms": 879.6349579934031,
+      "phase1_parallel_ms": 884.3420000048354,
       "phase1_tasks_completed": 10,
-      "phase2_refactor_ms": 25.689875008538365,
+      "phase2_refactor_ms": 29.17249998426996,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 67.06599998869933,
+      "phase3_tests_ms": 71.34991697967052,
       "phase3_tests_passed": true,
-      "total_duration_ms": 972.3953750217333,
-      "speedup_factor": 9.094681750995163,
-      "throughput_tasks_per_sec": 11.368352188743954
+      "total_duration_ms": 984.8696250119247,
+      "speedup_factor": 9.046273952787788,
+      "throughput_tasks_per_sec": 11.307842440984734
     }
   },
   "scenario_3_100_concurrent_users": {
@@ -288,66 +344,79 @@
       "engine": "Paseo",
       "isolation_model": "Full Git Worktree & Branch Isolation",
       "collision_rate": "0.0% (Zero Collision Risk)",
-      "phase1_parallel_ms": 7318.449290993158,
+      "phase1_parallel_ms": 9988.12204101705,
       "phase1_tasks_completed": 100,
-      "phase2_refactor_ms": 0.5398750072345138,
+      "phase2_refactor_ms": 0.5099999834783375,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 67.89795798249543,
+      "phase3_tests_ms": 78.43216601759195,
       "phase3_tests_passed": true,
-      "total_duration_ms": 7386.890124995261,
-      "throughput_tasks_per_sec": 13.664096863125138
+      "total_duration_ms": 10067.069750017254,
+      "throughput_tasks_per_sec": 10.011892084351965
     },
     "CodeNomad": {
       "engine": "CodeNomad",
       "isolation_model": "Supervised Multi-Session Desktop Cockpit",
       "collision_rate": "Low (Supervised Shared Working Tree)",
-      "phase1_parallel_ms": 14.878582995152101,
+      "phase1_parallel_ms": 15.451290993951261,
       "phase1_tasks_completed": 100,
-      "phase2_refactor_ms": 0.3915830166079104,
+      "phase2_refactor_ms": 0.37870899541303515,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 66.1917090183124,
+      "phase3_tests_ms": 80.02300001680851,
       "phase3_tests_passed": true,
-      "total_duration_ms": 81.46512499661185,
-      "throughput_tasks_per_sec": 6721.070147108973
+      "total_duration_ms": 95.85683399927802,
+      "throughput_tasks_per_sec": 6471.951116521405
     },
     "OpenChamber": {
       "engine": "OpenChamber",
       "isolation_model": "In-Place Model Fusion & AST Pre-Validation",
       "collision_rate": "Medium (Pre-validated In-Memory Buffer)",
-      "phase1_parallel_ms": 70.79429199802689,
+      "phase1_parallel_ms": 83.38891601306386,
       "phase1_tasks_completed": 100,
-      "phase2_refactor_ms": 0.33845900907181203,
+      "phase2_refactor_ms": 0.33854201319627464,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 66.68991598417051,
+      "phase3_tests_ms": 78.42445801361464,
       "phase3_tests_passed": true,
-      "total_duration_ms": 137.82770797843114,
-      "throughput_tasks_per_sec": 1412.5432598829734
+      "total_duration_ms": 162.15525000006892,
+      "throughput_tasks_per_sec": 1199.2001429102856
     },
     "OpenCode Native": {
       "engine": "OpenCode Native",
       "isolation_model": "Direct Single Working Tree (Zero Wrapper Overhead)",
       "collision_rate": "High (Unsupervised Single Working Tree)",
-      "phase1_parallel_ms": 9.983958007069305,
+      "phase1_parallel_ms": 8.433917013462633,
       "phase1_tasks_completed": 100,
-      "phase2_refactor_ms": 0.3969169920310378,
+      "phase2_refactor_ms": 0.6809999758843333,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 75.84554198547266,
+      "phase3_tests_ms": 75.56674999068491,
       "phase3_tests_passed": true,
-      "total_duration_ms": 86.2300000153482,
-      "throughput_tasks_per_sec": 10016.0677688341
+      "total_duration_ms": 84.68433300731704,
+      "throughput_tasks_per_sec": 11856.886881904942
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "isolation_model": "Knowledge-Graph SDLC Control Plane & Structured Work Orders",
+      "collision_rate": "Zero (Knowledge Graph Synchronized Assembly Line)",
+      "phase1_parallel_ms": 40.75766701134853,
+      "phase1_tasks_completed": 100,
+      "phase2_refactor_ms": 0.2640000020619482,
+      "phase2_ast_valid": true,
+      "phase3_tests_ms": 73.37058300618082,
+      "phase3_tests_passed": true,
+      "total_duration_ms": 114.39487498137169,
+      "throughput_tasks_per_sec": 2453.5261052149053
     },
     "DIY (Tmux / Bash Daemon)": {
       "engine": "DIY (Tmux / Bash Daemon)",
       "isolation_model": "Detached Shell Daemon / Subshell Pipes",
       "collision_rate": "High (Concurrent Shell I/O)",
-      "phase1_parallel_ms": 498.9483749959618,
+      "phase1_parallel_ms": 539.4992920046207,
       "phase1_tasks_completed": 100,
-      "phase2_refactor_ms": 24.841709004249424,
+      "phase2_refactor_ms": 35.36683399579488,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 68.65958299022168,
+      "phase3_tests_ms": 77.51712499884889,
       "phase3_tests_passed": true,
-      "total_duration_ms": 592.4569579947274,
-      "throughput_tasks_per_sec": 200.42153659846943
+      "total_duration_ms": 652.3877500148956,
+      "throughput_tasks_per_sec": 185.3570551101734
     }
   },
   "scenario_4_same_file_contention": {
@@ -355,126 +424,151 @@
       "engine": "Paseo",
       "isolation_model": "Full Git Worktree & Branch Isolation",
       "collision_rate": "0.0% (Zero Collision Risk)",
-      "phase1_parallel_ms": 3566.6156250226777,
+      "phase1_parallel_ms": 5045.606790983584,
       "phase1_tasks_completed": 50,
-      "phase2_refactor_ms": 0.4940000071655959,
+      "phase2_refactor_ms": 0.5070420156698674,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 66.98154198238626,
+      "phase3_tests_ms": 77.14395798393525,
       "phase3_tests_passed": true,
-      "total_duration_ms": 3634.0953330218326,
-      "throughput_tasks_per_sec": 14.018892209524845
+      "total_duration_ms": 5123.2612500025425,
+      "throughput_tasks_per_sec": 9.909610889486904
     },
     "CodeNomad": {
       "engine": "CodeNomad",
       "isolation_model": "Supervised Multi-Session Desktop Cockpit",
       "collision_rate": "Low (Supervised Shared Working Tree)",
-      "phase1_parallel_ms": 9.34133300324902,
+      "phase1_parallel_ms": 9.855291980784386,
       "phase1_tasks_completed": 50,
-      "phase2_refactor_ms": 0.36720800562761724,
+      "phase2_refactor_ms": 0.3938750014640391,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 63.91004199394956,
+      "phase3_tests_ms": 76.55550001072697,
       "phase3_tests_passed": true,
-      "total_duration_ms": 73.6229159811046,
-      "throughput_tasks_per_sec": 5352.555142034808
+      "total_duration_ms": 86.80766599718481,
+      "throughput_tasks_per_sec": 5073.41640384565
     },
     "OpenChamber": {
       "engine": "OpenChamber",
       "isolation_model": "In-Place Model Fusion & AST Pre-Validation",
       "collision_rate": "Medium (Pre-validated In-Memory Buffer)",
-      "phase1_parallel_ms": 40.92454200144857,
+      "phase1_parallel_ms": 46.502457989845425,
       "phase1_tasks_completed": 50,
-      "phase2_refactor_ms": 0.34395797410979867,
+      "phase2_refactor_ms": 0.5078750255052,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 62.85804099752568,
+      "phase3_tests_ms": 74.18579098884948,
       "phase3_tests_passed": true,
-      "total_duration_ms": 104.13175000576302,
-      "throughput_tasks_per_sec": 1221.7607712807194
+      "total_duration_ms": 121.20095800491981,
+      "throughput_tasks_per_sec": 1075.211981502533
     },
     "OpenCode Native": {
       "engine": "OpenCode Native",
       "isolation_model": "Direct Single Working Tree (Zero Wrapper Overhead)",
       "collision_rate": "High (Unsupervised Single Working Tree)",
-      "phase1_parallel_ms": 8.766667015152052,
+      "phase1_parallel_ms": 4.727666993858293,
       "phase1_tasks_completed": 50,
-      "phase2_refactor_ms": 0.3737499937415123,
+      "phase2_refactor_ms": 0.356167001882568,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 63.60291698365472,
+      "phase3_tests_ms": 74.39708299352787,
       "phase3_tests_passed": true,
-      "total_duration_ms": 72.74737500119954,
-      "throughput_tasks_per_sec": 5703.421826514165
+      "total_duration_ms": 79.48354200925678,
+      "throughput_tasks_per_sec": 10576.041008166385
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "isolation_model": "Knowledge-Graph SDLC Control Plane & Structured Work Orders",
+      "collision_rate": "Zero (Knowledge Graph Synchronized Assembly Line)",
+      "phase1_parallel_ms": 25.520458002574742,
+      "phase1_tasks_completed": 50,
+      "phase2_refactor_ms": 0.42045797454193234,
+      "phase2_ast_valid": true,
+      "phase3_tests_ms": 73.56395799433812,
+      "phase3_tests_passed": true,
+      "total_duration_ms": 99.51099997851998,
+      "throughput_tasks_per_sec": 1959.2124872898257
     },
     "DIY (Tmux / Bash Daemon)": {
       "engine": "DIY (Tmux / Bash Daemon)",
       "isolation_model": "Detached Shell Daemon / Subshell Pipes",
       "collision_rate": "High (Concurrent Shell I/O)",
-      "phase1_parallel_ms": 210.477415996138,
+      "phase1_parallel_ms": 297.9292919917498,
       "phase1_tasks_completed": 50,
-      "phase2_refactor_ms": 24.809208000078797,
+      "phase2_refactor_ms": 38.20275000180118,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 66.86895800521597,
+      "phase3_tests_ms": 75.99970800220035,
       "phase3_tests_passed": true,
-      "total_duration_ms": 302.1625419787597,
-      "throughput_tasks_per_sec": 237.5551778957484
+      "total_duration_ms": 412.1395829715766,
+      "throughput_tasks_per_sec": 167.82505562220646
     }
   },
   "scenario_5_dag_pipeline": {
     "Paseo": {
       "engine": "Paseo",
-      "pipeline_duration_ms": 163.405416009482,
+      "pipeline_duration_ms": 273.1537500221748,
       "stages_completed": 4,
       "stage_timings_ms": [
-        28.2524999929592,
-        27.62595799867995,
-        26.65162499761209,
-        26.267874985933304
+        44.92666700389236,
+        44.35733400168829,
+        43.98837499320507,
+        43.86141599388793
       ],
       "status": "passed"
     },
     "CodeNomad": {
       "engine": "CodeNomad",
-      "pipeline_duration_ms": 0.5132079822942615,
+      "pipeline_duration_ms": 0.6089579837862402,
       "stages_completed": 4,
       "stage_timings_ms": [
-        0.19820898887701333,
-        0.1034580054692924,
-        0.10950001887977123,
-        0.09600000339560211
+        0.20062501425854862,
+        0.15212499420158565,
+        0.1524580002296716,
+        0.09695798507891595
       ],
       "status": "passed"
     },
     "OpenChamber": {
       "engine": "OpenChamber",
-      "pipeline_duration_ms": 1.059083006111905,
+      "pipeline_duration_ms": 1.3498339976649731,
       "stages_completed": 4,
       "stage_timings_ms": [
-        0.48079201951622963,
-        0.1765000051818788,
-        0.18158400780521333,
-        0.21337499492801726
+        0.5300830234773457,
+        0.28670800384134054,
+        0.24066597688943148,
+        0.2844169794116169
       ],
       "status": "passed"
     },
     "OpenCode Native": {
       "engine": "OpenCode Native",
-      "pipeline_duration_ms": 0.31350000062957406,
+      "pipeline_duration_ms": 0.2400000230409205,
       "stages_completed": 4,
       "stage_timings_ms": [
-        0.1152500044554472,
-        0.0761660048738122,
-        0.07270800415426493,
-        0.04025001544505358
+        0.08616701234132051,
+        0.056374992709606886,
+        0.04791599349118769,
+        0.04020801861770451
+      ],
+      "status": "passed"
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "pipeline_duration_ms": 1.4219579752534628,
+      "stages_completed": 4,
+      "stage_timings_ms": [
+        0.5377499910537153,
+        0.3028750070370734,
+        0.30691700521856546,
+        0.26629201602190733
       ],
       "status": "passed"
     },
     "DIY (Tmux / Bash Daemon)": {
       "engine": "DIY (Tmux / Bash Daemon)",
-      "pipeline_duration_ms": 114.02620901935734,
+      "pipeline_duration_ms": 135.3895000065677,
       "stages_completed": 4,
       "stage_timings_ms": [
-        27.311791985994205,
-        28.361584001686424,
-        28.937249997397885,
-        29.397042002528906
+        34.111542016034946,
+        33.589250000659376,
+        32.87545798229985,
+        34.7886249946896
       ],
       "status": "passed"
     }
@@ -484,198 +578,377 @@
       "engine": "Paseo",
       "isolation_model": "Full Git Worktree & Branch Isolation",
       "collision_rate": "0.0% (Zero Collision Risk)",
-      "phase1_parallel_ms": 2765.0215409812517,
+      "phase1_parallel_ms": 3118.4169170155656,
       "phase1_tasks_completed": 20,
-      "phase2_refactor_ms": 0.4666250024456531,
+      "phase2_refactor_ms": 0.46479201409965754,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 62.47524998616427,
+      "phase3_tests_ms": 73.69308298802935,
       "phase3_tests_passed": true,
-      "total_duration_ms": 2827.9666249873117,
-      "throughput_tasks_per_sec": 7.233216705032393
+      "total_duration_ms": 3192.5794999988284,
+      "throughput_tasks_per_sec": 6.4135106152325205
     },
     "CodeNomad": {
       "engine": "CodeNomad",
       "isolation_model": "Supervised Multi-Session Desktop Cockpit",
       "collision_rate": "Low (Supervised Shared Working Tree)",
-      "phase1_parallel_ms": 1807.8085000161082,
+      "phase1_parallel_ms": 1805.9165000158828,
       "phase1_tasks_completed": 20,
-      "phase2_refactor_ms": 0.6558749882970005,
+      "phase2_refactor_ms": 0.5720830231439322,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 68.95387498661876,
+      "phase3_tests_ms": 78.60979199176654,
       "phase3_tests_passed": true,
-      "total_duration_ms": 1877.4225829984061,
-      "throughput_tasks_per_sec": 11.063118687527906
+      "total_duration_ms": 1885.103083011927,
+      "throughput_tasks_per_sec": 11.074709157275047
     },
     "OpenChamber": {
       "engine": "OpenChamber",
       "isolation_model": "In-Place Model Fusion & AST Pre-Validation",
       "collision_rate": "Medium (Pre-validated In-Memory Buffer)",
-      "phase1_parallel_ms": 1812.4053750070743,
+      "phase1_parallel_ms": 1814.0235840110108,
       "phase1_tasks_completed": 20,
-      "phase2_refactor_ms": 0.5194999976083636,
+      "phase2_refactor_ms": 0.4023340006824583,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 66.322292026598,
+      "phase3_tests_ms": 75.72662498569116,
       "phase3_tests_passed": true,
-      "total_duration_ms": 1879.25041600829,
-      "throughput_tasks_per_sec": 11.035058864754214
+      "total_duration_ms": 1890.1585830026306,
+      "throughput_tasks_per_sec": 11.025214984128125
     },
     "OpenCode Native": {
       "engine": "OpenCode Native",
       "isolation_model": "Direct Single Working Tree (Zero Wrapper Overhead)",
       "collision_rate": "High (Unsupervised Single Working Tree)",
-      "phase1_parallel_ms": 1808.061457995791,
+      "phase1_parallel_ms": 1806.683915987378,
       "phase1_tasks_completed": 20,
-      "phase2_refactor_ms": 1.145582995377481,
+      "phase2_refactor_ms": 0.8815839828457683,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 93.14679200178944,
+      "phase3_tests_ms": 88.86716698179953,
       "phase3_tests_passed": true,
-      "total_duration_ms": 1902.3599170031957,
-      "throughput_tasks_per_sec": 11.061570894923948
+      "total_duration_ms": 1896.4382910053246,
+      "throughput_tasks_per_sec": 11.070005009188185
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "isolation_model": "Knowledge-Graph SDLC Control Plane & Structured Work Orders",
+      "collision_rate": "Zero (Knowledge Graph Synchronized Assembly Line)",
+      "phase1_parallel_ms": 1809.432833979372,
+      "phase1_tasks_completed": 20,
+      "phase2_refactor_ms": 0.9029579814523458,
+      "phase2_ast_valid": true,
+      "phase3_tests_ms": 97.93175000231713,
+      "phase3_tests_passed": true,
+      "total_duration_ms": 1908.2738750148565,
+      "throughput_tasks_per_sec": 11.053187288535744
     },
     "DIY (Tmux / Bash Daemon)": {
       "engine": "DIY (Tmux / Bash Daemon)",
       "isolation_model": "Detached Shell Daemon / Subshell Pipes",
       "collision_rate": "High (Concurrent Shell I/O)",
-      "phase1_parallel_ms": 1877.0000000076834,
+      "phase1_parallel_ms": 1893.2663750019856,
       "phase1_tasks_completed": 20,
-      "phase2_refactor_ms": 27.538708003703505,
+      "phase2_refactor_ms": 32.57624999969266,
       "phase2_ast_valid": true,
-      "phase3_tests_ms": 67.37545802025124,
+      "phase3_tests_ms": 71.97433398687281,
       "phase3_tests_passed": true,
-      "total_duration_ms": 1971.920416021021,
-      "throughput_tasks_per_sec": 10.655301012209978
+      "total_duration_ms": 1997.8220839984715,
+      "throughput_tasks_per_sec": 10.56375387218242
     }
   },
   "scenario_7_concurrency_sweep": {
     "Paseo": {
       "1_tasks": {
-        "latency_ms": 80.31074999598786,
-        "throughput_tasks_per_sec": 12.451633187959988
+        "latency_ms": 125.54812501184642,
+        "throughput_tasks_per_sec": 7.965073153467185
       },
       "5_tasks": {
-        "latency_ms": 287.7722499833908,
-        "throughput_tasks_per_sec": 17.37485112024729
+        "latency_ms": 468.1760000239592,
+        "throughput_tasks_per_sec": 10.679744369092226
       },
       "20_tasks": {
-        "latency_ms": 1288.83366700029,
-        "throughput_tasks_per_sec": 15.517906237310838
+        "latency_ms": 1943.5332499851938,
+        "throughput_tasks_per_sec": 10.290536578240873
       },
       "50_tasks": {
-        "latency_ms": 3745.25158299366,
-        "throughput_tasks_per_sec": 13.350237999241141
+        "latency_ms": 5022.972541017225,
+        "throughput_tasks_per_sec": 9.95426504757963
       },
       "100_tasks": {
-        "latency_ms": 6956.838332989719,
-        "throughput_tasks_per_sec": 14.374345818242515
+        "latency_ms": 10016.224708000664,
+        "throughput_tasks_per_sec": 9.983801573473382
       },
       "200_tasks": {
-        "latency_ms": 14355.276166985277,
-        "throughput_tasks_per_sec": 13.932159693309586
+        "latency_ms": 20440.94758297433,
+        "throughput_tasks_per_sec": 9.78428222019335
       }
     },
     "CodeNomad": {
       "1_tasks": {
-        "latency_ms": 1.599459006683901,
-        "throughput_tasks_per_sec": 625.211396991826
+        "latency_ms": 1.609917002497241,
+        "throughput_tasks_per_sec": 621.1500334792655
       },
       "5_tasks": {
-        "latency_ms": 2.1945420012343675,
-        "throughput_tasks_per_sec": 2278.3797244197845
+        "latency_ms": 2.321958018001169,
+        "throughput_tasks_per_sec": 2153.3550396850815
       },
       "20_tasks": {
-        "latency_ms": 4.794125008629635,
-        "throughput_tasks_per_sec": 4171.772735170469
+        "latency_ms": 4.5569999783765525,
+        "throughput_tasks_per_sec": 4388.852335945166
       },
       "50_tasks": {
-        "latency_ms": 8.802750002359971,
-        "throughput_tasks_per_sec": 5680.04316680529
+        "latency_ms": 11.104957986390218,
+        "throughput_tasks_per_sec": 4502.493396308023
       },
       "100_tasks": {
-        "latency_ms": 22.166000009747222,
-        "throughput_tasks_per_sec": 4511.413875125248
+        "latency_ms": 15.422582975588739,
+        "throughput_tasks_per_sec": 6483.998183591074
       },
       "200_tasks": {
-        "latency_ms": 25.337708997540176,
-        "throughput_tasks_per_sec": 7893.373470325052
+        "latency_ms": 26.233875018078834,
+        "throughput_tasks_per_sec": 7623.730762694106
       }
     },
     "OpenChamber": {
       "1_tasks": {
-        "latency_ms": 1.3350420049391687,
-        "throughput_tasks_per_sec": 749.0401023341323
+        "latency_ms": 1.3416250003501773,
+        "throughput_tasks_per_sec": 745.3647626862872
       },
       "5_tasks": {
-        "latency_ms": 4.113458009669557,
-        "throughput_tasks_per_sec": 1215.5223143755054
+        "latency_ms": 5.405999982031062,
+        "throughput_tasks_per_sec": 924.898264265527
       },
       "20_tasks": {
-        "latency_ms": 15.214457991532981,
-        "throughput_tasks_per_sec": 1314.53910557512
+        "latency_ms": 15.495750005356967,
+        "throughput_tasks_per_sec": 1290.6764753616887
       },
       "50_tasks": {
-        "latency_ms": 34.531749988673255,
-        "throughput_tasks_per_sec": 1447.9428356918047
+        "latency_ms": 35.5548330117017,
+        "throughput_tasks_per_sec": 1406.2785777546515
       },
       "100_tasks": {
-        "latency_ms": 63.906791008776054,
-        "throughput_tasks_per_sec": 1564.7789291480372
+        "latency_ms": 84.77841698913835,
+        "throughput_tasks_per_sec": 1179.5454969725586
       },
       "200_tasks": {
-        "latency_ms": 143.49670900264755,
-        "throughput_tasks_per_sec": 1393.7601871852683
+        "latency_ms": 153.44258298864588,
+        "throughput_tasks_per_sec": 1303.4191428776924
       }
     },
     "OpenCode Native": {
       "1_tasks": {
-        "latency_ms": 0.2864590205717832,
-        "throughput_tasks_per_sec": 3490.900715934732
+        "latency_ms": 0.305124995065853,
+        "throughput_tasks_per_sec": 3277.3454032639215
       },
       "5_tasks": {
-        "latency_ms": 0.6305419956333935,
-        "throughput_tasks_per_sec": 7929.685944196925
+        "latency_ms": 0.7310000073630363,
+        "throughput_tasks_per_sec": 6839.945211542045
       },
       "20_tasks": {
-        "latency_ms": 2.1197910245973617,
-        "throughput_tasks_per_sec": 9434.892292648918
+        "latency_ms": 2.0824999955948442,
+        "throughput_tasks_per_sec": 9603.841556929852
       },
       "50_tasks": {
-        "latency_ms": 4.691499983891845,
-        "throughput_tasks_per_sec": 10657.572241644213
+        "latency_ms": 4.468667000764981,
+        "throughput_tasks_per_sec": 11189.019005318725
       },
       "100_tasks": {
-        "latency_ms": 7.417375018121675,
-        "throughput_tasks_per_sec": 13481.85844125262
+        "latency_ms": 8.389457972953096,
+        "throughput_tasks_per_sec": 11919.721193239367
       },
       "200_tasks": {
-        "latency_ms": 14.771457994356751,
-        "throughput_tasks_per_sec": 13539.624868202412
+        "latency_ms": 15.377750009065494,
+        "throughput_tasks_per_sec": 13005.8038322964
+      }
+    },
+    "8090 Software Factory": {
+      "1_tasks": {
+        "latency_ms": 0.728667015209794,
+        "throughput_tasks_per_sec": 1372.3689684403857
+      },
+      "5_tasks": {
+        "latency_ms": 2.2994159953668714,
+        "throughput_tasks_per_sec": 2174.4651729285074
+      },
+      "20_tasks": {
+        "latency_ms": 6.689792004181072,
+        "throughput_tasks_per_sec": 2989.629571068898
+      },
+      "50_tasks": {
+        "latency_ms": 16.257790994131938,
+        "throughput_tasks_per_sec": 3075.4485660473138
+      },
+      "100_tasks": {
+        "latency_ms": 37.39266699994914,
+        "throughput_tasks_per_sec": 2674.3211443071446
+      },
+      "200_tasks": {
+        "latency_ms": 88.71904198895209,
+        "throughput_tasks_per_sec": 2254.3074802916085
       }
     },
     "DIY (Tmux / Bash Daemon)": {
       "1_tasks": {
-        "latency_ms": 24.35879097902216,
-        "throughput_tasks_per_sec": 41.052940634910904
+        "latency_ms": 29.189166001742706,
+        "throughput_tasks_per_sec": 34.25928647431366
       },
       "5_tasks": {
-        "latency_ms": 35.07758298655972,
-        "throughput_tasks_per_sec": 142.5411779915336
+        "latency_ms": 41.880917007802054,
+        "throughput_tasks_per_sec": 119.38611561605833
       },
       "20_tasks": {
-        "latency_ms": 79.24212500802241,
-        "throughput_tasks_per_sec": 252.39101043763296
+        "latency_ms": 104.38329199678265,
+        "throughput_tasks_per_sec": 191.60154482018493
       },
       "50_tasks": {
-        "latency_ms": 230.07391599821858,
-        "throughput_tasks_per_sec": 217.3214629005886
+        "latency_ms": 272.0393339986913,
+        "throughput_tasks_per_sec": 183.79695048158197
       },
       "100_tasks": {
-        "latency_ms": 410.6318330159411,
-        "throughput_tasks_per_sec": 243.52715001546875
+        "latency_ms": 546.2811249890365,
+        "throughput_tasks_per_sec": 183.05593114169363
       },
       "200_tasks": {
-        "latency_ms": 918.4458749950863,
-        "throughput_tasks_per_sec": 217.75915755631218
+        "latency_ms": 1091.12295799423,
+        "throughput_tasks_per_sec": 183.29739882629949
       }
+    }
+  },
+  "scenario_8_fault_injection": {
+    "Paseo": {
+      "engine": "Paseo",
+      "duration_ms": 939.2670420056675,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 5,
+      "leakage_to_main": "0.0% (Zero Leakage / 100% Branch Isolation)"
+    },
+    "CodeNomad": {
+      "engine": "CodeNomad",
+      "duration_ms": 4.152458015596494,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 5,
+      "leakage_to_main": "0.0% (Pre-Write Guard Rejected Syntax)"
+    },
+    "OpenChamber": {
+      "engine": "OpenChamber",
+      "duration_ms": 4.169833002379164,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 5,
+      "leakage_to_main": "0.0% (Filtered by Multi-Model AST Engine)"
+    },
+    "OpenCode Native": {
+      "engine": "OpenCode Native",
+      "duration_ms": 1.3565420231316239,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 0,
+      "leakage_to_main": "5 Buggy Writes Leaked to Working Tree (No Guardrail)"
+    },
+    "8090 Software Factory": {
+      "engine": "8090 Software Factory",
+      "duration_ms": 4.066583001986146,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 5,
+      "leakage_to_main": "0.0% (Context Gate & In-Line Quality Assurance)"
+    },
+    "DIY (Tmux / Bash Daemon)": {
+      "engine": "DIY (Tmux / Bash Daemon)",
+      "duration_ms": 73.91720797750168,
+      "faults_injected": 5,
+      "faults_contained_and_aborted": 0,
+      "leakage_to_main": "5 Buggy Writes Leaked to Working Tree (No Isolation)"
+    }
+  },
+  "scenario_9_large_monolith": {
+    "Paseo": {
+      "duration_ms": 1928.557874984108,
+      "throughput_tasks_per_sec": 10.370443251626456,
+      "ast_valid": true
+    },
+    "CodeNomad": {
+      "duration_ms": 6.113959010690451,
+      "throughput_tasks_per_sec": 3271.2028270110036,
+      "ast_valid": true
+    },
+    "OpenChamber": {
+      "duration_ms": 2153.1922909780405,
+      "throughput_tasks_per_sec": 9.288534091358574,
+      "ast_valid": true
+    },
+    "OpenCode Native": {
+      "duration_ms": 2.295791986398399,
+      "throughput_tasks_per_sec": 8711.59064867008,
+      "ast_valid": true
+    },
+    "8090 Software Factory": {
+      "duration_ms": 621.6935410047881,
+      "throughput_tasks_per_sec": 32.170191068216305,
+      "ast_valid": true
+    },
+    "DIY (Tmux / Bash Daemon)": {
+      "duration_ms": 151.86258300673217,
+      "throughput_tasks_per_sec": 131.69801016168273,
+      "ast_valid": true
+    }
+  },
+  "scenario_10_pr_merge": {
+    "Paseo": {
+      "merge_duration_ms": 859.4427090138197,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    },
+    "CodeNomad": {
+      "merge_duration_ms": 0.4842919879592955,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    },
+    "OpenChamber": {
+      "merge_duration_ms": 0.30537499696947634,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    },
+    "OpenCode Native": {
+      "merge_duration_ms": 0.2937079989351332,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    },
+    "8090 Software Factory": {
+      "merge_duration_ms": 0.3152090066578239,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    },
+    "DIY (Tmux / Bash Daemon)": {
+      "merge_duration_ms": 0.2823329996317625,
+      "branches_merged": 5,
+      "test_suite_passed": true
+    }
+  },
+  "scenario_11_memory_profiling": {
+    "Paseo": {
+      "peak_rss_mb": 127.90625,
+      "memory_delta_mb": 0.40625,
+      "execution_ms": 5499.4081250042655
+    },
+    "CodeNomad": {
+      "peak_rss_mb": 128.46875,
+      "memory_delta_mb": 0.5625,
+      "execution_ms": 9.636583999963477
+    },
+    "OpenChamber": {
+      "peak_rss_mb": 128.46875,
+      "memory_delta_mb": 0.0,
+      "execution_ms": 36.02779100765474
+    },
+    "OpenCode Native": {
+      "peak_rss_mb": 128.46875,
+      "memory_delta_mb": 0.0,
+      "execution_ms": 4.278834006981924
+    },
+    "8090 Software Factory": {
+      "peak_rss_mb": 128.46875,
+      "memory_delta_mb": 0.0,
+      "execution_ms": 18.02637497894466
+    },
+    "DIY (Tmux / Bash Daemon)": {
+      "peak_rss_mb": 128.46875,
+      "memory_delta_mb": 0.0,
+      "execution_ms": 277.9141250066459
     }
   }
 }
