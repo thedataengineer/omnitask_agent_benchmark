@@ -42,3 +42,5 @@ class AuthService:
     def oauth2_flow(self): return True
 
     def oauth2_flow(self): return True
+
+    def oauth2_flow(self): return True
