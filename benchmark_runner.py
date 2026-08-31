@@ -11,8 +11,8 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, List, Any, Tuple
 
-REPO_PATH = '/Users/yakarteek/.gemini/tasks/c_642f453f64ca01f4/workspace/omnitask_project'
-WORKSPACES_ROOT = '/Users/yakarteek/.gemini/tasks/c_642f453f64ca01f4/workspace/worktrees'
+REPO_PATH = os.path.dirname(os.path.abspath(__file__))
+WORKSPACES_ROOT = os.path.join(REPO_PATH, '.worktrees')
 
 # --- 1. OpenChamber Paradigm: Multi-Model Fusion & Visual Diff Engine ---
 class OpenChamberHarness:
@@ -117,6 +117,7 @@ class PaseoHarness:
         self.repo_path = repo_path
         self.worktrees_dir = worktrees_dir
         self.name = 'Paseo (Multi-Agent Git Worktrees & Handoff)'
+        self.git_lock = threading.Lock()
         if os.path.exists(self.worktrees_dir):
             shutil.rmtree(self.worktrees_dir)
         os.makedirs(self.worktrees_dir, exist_ok=True)
@@ -129,13 +130,17 @@ class PaseoHarness:
             branch_name = f"agent-task-{task['id']}"
             wt_path = os.path.join(self.worktrees_dir, f"wt_{task['id']}")
             
-            # 1. Paseo creates isolated Git worktree
-            subprocess.run(
-                ['git', 'worktree', 'add', '-b', branch_name, wt_path],
-                cwd=self.repo_path,
-                capture_output=True,
-                check=True
-            )
+            with self.git_lock:
+                # Clean up pre-existing branch if any
+                subprocess.run(['git', 'branch', '-D', branch_name], cwd=self.repo_path, capture_output=True)
+                
+                # 1. Paseo creates isolated Git worktree
+                subprocess.run(
+                    ['git', 'worktree', 'add', '-b', branch_name, wt_path],
+                    cwd=self.repo_path,
+                    capture_output=True,
+                    check=True
+                )
 
             # 2. Agent executes inside isolated worktree (No main tree conflict)
             target_file = os.path.join(wt_path, task['file'])
@@ -150,8 +155,10 @@ class PaseoHarness:
             subprocess.run(['git', 'add', '.'], cwd=wt_path, capture_output=True, check=True)
             subprocess.run(['git', 'commit', '-m', f"feat: {task['feature']}"], cwd=wt_path, capture_output=True, check=True)
             
-            # 4. Clean up worktree after shipping
-            subprocess.run(['git', 'worktree', 'remove', wt_path], cwd=self.repo_path, capture_output=True, check=True)
+            with self.git_lock:
+                # 4. Clean up worktree after shipping
+                subprocess.run(['git', 'worktree', 'remove', '--force', wt_path], cwd=self.repo_path, capture_output=True, check=True)
+                subprocess.run(['git', 'branch', '-D', branch_name], cwd=self.repo_path, capture_output=True)
 
             return {'id': task['id'], 'branch': branch_name, 'status': 'shipped_in_worktree'}
 
@@ -292,7 +299,7 @@ def run_all_benchmarks():
     benchmark_report['diy'] = diy_res
 
     # Save detailed JSON report
-    report_path = '/Users/yakarteek/.gemini/tasks/c_642f453f64ca01f4/workspace/benchmark_results.json'
+    report_path = os.path.join(REPO_PATH, 'benchmark_results.json')
     with open(report_path, 'w') as f:
         json.dump(benchmark_report, f, indent=2)
 
