@@ -38,3 +38,5 @@ class AuthService:
         return f'refresh_{user_id}_{time.time()}'
 
     def oauth2_flow(self): return True
+
+    def oauth2_flow(self): return True
