@@ -27,3 +27,5 @@ class Invoice:
     currency: str = 'USD'
     paid: bool = False
     created_at: float = dataclasses.field(default_factory=lambda: datetime.utcnow().timestamp())
+
+    # Shared model enhancement
