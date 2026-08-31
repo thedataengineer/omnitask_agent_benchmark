@@ -30,3 +30,5 @@ class ApiGateway:
     def cors_headers(self): return True
 
     def cors_headers(self): return True
+
+    def cors_headers(self): return True
