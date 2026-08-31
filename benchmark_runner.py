@@ -120,6 +120,7 @@ class PaseoHarness:
         self.git_lock = threading.Lock()
         if os.path.exists(self.worktrees_dir):
             shutil.rmtree(self.worktrees_dir)
+        subprocess.run(['git', 'worktree', 'prune'], cwd=self.repo_path, capture_output=True)
         os.makedirs(self.worktrees_dir, exist_ok=True)
 
     def run_isolated_worktree_agents(self, tasks: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -131,8 +132,9 @@ class PaseoHarness:
             wt_path = os.path.join(self.worktrees_dir, f"wt_{task['id']}")
             
             with self.git_lock:
-                # Clean up pre-existing branch if any
+                # Clean up pre-existing branch and prune worktrees if any
                 subprocess.run(['git', 'branch', '-D', branch_name], cwd=self.repo_path, capture_output=True)
+                subprocess.run(['git', 'worktree', 'prune'], cwd=self.repo_path, capture_output=True)
                 
                 # 1. Paseo creates isolated Git worktree
                 subprocess.run(
