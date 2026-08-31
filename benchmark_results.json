@@ -1,0 +1,68 @@
+{
+  "paseo_concurrency": {
+    "engine": "Paseo (Multi-Agent Git Worktrees & Handoff)",
+    "duration_ms": 305.508041,
+    "worktrees_created": 3,
+    "isolation_type": "Full Git Worktree & Branch Isolation (Zero Conflict)",
+    "results": [
+      {
+        "id": "auth-jwt-refresh",
+        "branch": "agent-task-auth-jwt-refresh",
+        "status": "shipped_in_worktree"
+      },
+      {
+        "id": "billing-stripe-webhook",
+        "branch": "agent-task-billing-stripe-webhook",
+        "status": "shipped_in_worktree"
+      },
+      {
+        "id": "task-engine-priority-queue",
+        "branch": "agent-task-task-engine-priority-queue",
+        "status": "shipped_in_worktree"
+      }
+    ]
+  },
+  "codenomad_concurrency": {
+    "engine": "CodeNomad (Multi-Instance Cockpit)",
+    "duration_ms": 19.365041000000026,
+    "sessions_count": 3,
+    "sessions": [
+      {
+        "id": "auth-jwt-refresh",
+        "file": "services/auth_service/auth_handler.py",
+        "status": "completed"
+      },
+      {
+        "id": "billing-stripe-webhook",
+        "file": "services/billing_service/billing_handler.py",
+        "status": "completed"
+      },
+      {
+        "id": "task-engine-priority-queue",
+        "file": "services/task_engine/task_dispatcher.py",
+        "status": "completed"
+      }
+    ],
+    "isolation_type": "Supervised Multi-Session Dashboard"
+  },
+  "openchamber_fusion": {
+    "engine": "OpenChamber (Visual IDE & Model Fusion)",
+    "duration_ms": 1.0548750000000107,
+    "candidates_evaluated": 3,
+    "chosen_model_idx": 1,
+    "diff_preview": "--- a/services/auth_service/auth_handler.py\n\n+++ b/services/auth_service/auth_handler.py\n\n@@ -32,3 +32,7 @@\n\n         return time.time() < float(expiry)\n \n # CodeNomad Session [auth-jwt-refresh]: Refr",
+    "isolation_type": "In-Place Visual Walkthrough"
+  },
+  "opencode_native": {
+    "engine": "OpenCode Native (TUI / `opencode serve`)",
+    "duration_ms": 0.14849999999999586,
+    "overhead": "Minimal (Zero GUI/Worktree wrapper overhead)",
+    "isolation_type": "Single Working Tree"
+  },
+  "diy": {
+    "engine": "DIY (Tailscale + Tmux + Bash Daemon)",
+    "duration_ms": 147.410875,
+    "exit_code": 0,
+    "isolation_type": "Manual Tmux Session / Tailscale Pipe"
+  }
+}
